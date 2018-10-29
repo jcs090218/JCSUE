@@ -1,5 +1,4 @@
 # JCSUE #
-<br/>
 
 JCSUE is a general speed components library. JCSUE 
 help out people who have trouble making script/component over 
@@ -8,5 +7,13 @@ provide many scripted game mechanics. With those combination
 of scripts/components could generate enormous variety of 
 different behaviour.  <br/><br/>
 
-### Demo ###
+
+## Current Version Status ##
+JCSUE Version => `1.0.1`
+<br/>
+Unreal Engine 4 Version => ``
+<br/>
+
+
+## Demo ##
 * N/A
