@@ -11,7 +11,7 @@ different behaviour.  <br/><br/>
 ## Current Version Status ##
 JCSUE Version => `1.0.1`
 <br/>
-Unreal Engine 4 Version => ``
+Unreal Engine 4 Version => `4.14.3`
 <br/>
 
 
