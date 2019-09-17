@@ -14,11 +14,5 @@ of scripts/components could generate enormous variety of
 different behaviour.  <br/><br/>
 
 
-## Current Version Status
-
-JCSUE Version => `1.0.1`
-Unreal Engine 4 Version => `4.14.3`
-
-
 ## Demo
 * N/A
