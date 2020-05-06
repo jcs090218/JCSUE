@@ -8,13 +8,12 @@
 ::                    Copyright (c) 2017 by Shen, Jen-Chieh $
 :: ========================================================================
 
-
-:: DESCRIPTION(jenchieh): Use this bat while you want to rebuild
-:: the solution file for Unreal Engine.
+::
+:: DESCRIPTION: Use this bat while you want to rebuild the 
+:: solution file for Unreal Engine.
 ::
 :: According to this
-:: SOURCE(jenchieh):
-:: https://answers.unrealengine.com/questions/166179/how-do-i-remove-a-c-class-from-my-project-code.html
+:: SOURCE: https://answers.unrealengine.com/questions/166179/how-do-i-remove-a-c-class-from-my-project-code.html
 ::
 
 :ask_to_delete

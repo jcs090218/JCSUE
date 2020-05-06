@@ -1,15 +1,16 @@
 @echo off
-REM ========================================================================
-REM $File: clean.bat $
-REM $Date: 2017-03-03 20:34:27 $
-REM $Revision: $
-REM $Creator: Jen-Chieh Shen $
-REM $Notice: See LICENSE.txt for modification and distribution information
-REM                    Copyright (c) 2017 by Shen, Jen-Chieh $
-REM ========================================================================
+:: ========================================================================
+:: $File: clean.bat $
+:: $Date: 2017-03-03 20:34:27 $
+:: $Revision: $
+:: $Creator: Jen-Chieh Shen $
+:: $Notice: See LICENSE.txt for modification and distribution information
+::                    Copyright (c) 2017 by Shen, Jen-Chieh $
+:: ========================================================================
 
-
-REM DESCRIPTION(jenchieh): clean up the unreal project.
+::
+:: DESCRIPTION: clean up the unreal project.
+::
 
 :ask_to_delete
 echo You sure you want to clean the Unreal Project? (y/n):
@@ -47,6 +48,6 @@ rmdir Binaries
 rmdir Saved
 rmdir Intermediate
 
-REM ------------ end block --------------
+:: ------------ end block --------------
 :end
 exit /b
