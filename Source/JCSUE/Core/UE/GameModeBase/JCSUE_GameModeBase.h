@@ -6,14 +6,10 @@
 #include "JCSUE_GameModeBase.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class JCSUE_API AJCSUE_GameModeBase : public AGameModeBase
 {
-	GENERATED_BODY()
-	
-	
-	
-	
+    GENERATED_BODY()
 };

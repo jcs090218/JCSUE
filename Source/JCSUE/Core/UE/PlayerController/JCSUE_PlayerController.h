@@ -6,14 +6,10 @@
 #include "JCSUE_PlayerController.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class JCSUE_API AJCSUE_PlayerController : public APlayerController
 {
-	GENERATED_BODY()
-	
-	
-	
-	
+    GENERATED_BODY()
 };

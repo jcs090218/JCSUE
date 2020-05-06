@@ -6,14 +6,10 @@
 #include "JCSUE_PlayerState.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class JCSUE_API AJCSUE_PlayerState : public APlayerState
 {
-	GENERATED_BODY()
-	
-	
-	
-	
+    GENERATED_BODY()
 };

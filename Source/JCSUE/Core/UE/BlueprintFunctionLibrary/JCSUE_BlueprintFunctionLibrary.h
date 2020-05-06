@@ -6,14 +6,10 @@
 #include "JCSUE_BlueprintFunctionLibrary.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class JCSUE_API UJCSUE_BlueprintFunctionLibrary : public UBlueprintFunctionLibrary
 {
-	GENERATED_BODY()
-	
-	
-	
-	
+    GENERATED_BODY()
 };

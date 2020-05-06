@@ -6,14 +6,10 @@
 #include "JCSUE_PlayerCameraManager.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class JCSUE_API AJCSUE_PlayerCameraManager : public APlayerCameraManager
 {
-	GENERATED_BODY()
-	
-	
-	
-	
+    GENERATED_BODY()
 };

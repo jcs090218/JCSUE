@@ -2,19 +2,17 @@
 
 #pragma once
 
-
 #include "Widgets/SCompoundWidget.h"
 
 /**
- * 
+ *
  */
 class JCSUE_API SJCSUE_CompoundWidget : public SCompoundWidget
 {
 public:
-	SLATE_BEGIN_ARGS(SJCSUE_CompoundWidget)
-	{}
-	SLATE_END_ARGS()
+    SLATE_BEGIN_ARGS(SJCSUE_CompoundWidget) {}
+    SLATE_END_ARGS()
 
-	/** Constructs this widget with InArgs */
-	void Construct(const FArguments& InArgs);
+    /** Constructs this widget with InArgs */
+    void Construct(const FArguments& InArgs);
 };

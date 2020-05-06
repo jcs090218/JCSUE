@@ -3,11 +3,11 @@
 #include "JCSUE.h"
 #include "JCSUE_UnrealInterface.h"
 
-
 // This function does not need to be modified.
 UJCSUE_UnrealInterface::UJCSUE_UnrealInterface(const class FObjectInitializer& ObjectInitializer)
-: Super(ObjectInitializer)
+        : Super(ObjectInitializer)
 {
+    // empty..
 }
 
 // Add default functionality here for any IJCSUE_UnrealInterface functions that are not pure virtual.

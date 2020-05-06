@@ -2,7 +2,3 @@
 
 #include "JCSUE.h"
 #include "JCSUE_WorldSettings.h"
-
-
-
-

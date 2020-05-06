@@ -9,21 +9,20 @@ UCLASS()
 class JCSUE_API AJCSUE_Character : public ACharacter
 {
 private:
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-	APlayerController* m_pPlayerController = nullptr;
+    APlayerController* m_pPlayerController = nullptr;
 
 public:
-	// Sets default values for this character's properties
-	AJCSUE_Character();
+    // Sets default values for this character's properties
+    AJCSUE_Character();
 
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
-	
-	// Called every frame
-	virtual void Tick( float DeltaSeconds ) override;
+    // Called when the game starts or when spawned
+    virtual void BeginPlay() override;
 
-	// Called to bind functionality to input
-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-	
+    // Called every frame
+    virtual void Tick( float DeltaSeconds ) override;
+
+    // Called to bind functionality to input
+    virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 };

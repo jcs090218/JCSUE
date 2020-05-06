@@ -6,14 +6,10 @@
 #include "JCSUE_WorldSettings.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class JCSUE_API AJCSUE_WorldSettings : public AWorldSettings
 {
-	GENERATED_BODY()
-	
-	
-	
-	
+    GENERATED_BODY()
 };
