@@ -9,7 +9,6 @@
  */
 //#define __JCSUE_AXIS_H__
 
-
 /**
  * ATTENTION(jenchieh): if declaring the enum in isolate header file. 
  * Do not use "include guard", use "pragma once" instead.
@@ -21,7 +20,6 @@
 UENUM()
 namespace JCSUE
 {
-
 	/**
 	* @enum JCSUE_Axis
 	* @brief x, y, z axis.
@@ -34,10 +32,8 @@ namespace JCSUE
 		k_y,
 		k_z,
 	};
-
 }
 
 typedef JCSUE::JCSUE_Axis JCSUE_Axis;
-
 
 //#endif /* __JCSUE_AXIS_H__ */

@@ -8,11 +8,8 @@
 */
 #pragma once
 
-
-
 namespace JCSUE
 {
-	
 	/**
 	 * @enum JCSUE_Keys
 	 * @brief Key defines.
