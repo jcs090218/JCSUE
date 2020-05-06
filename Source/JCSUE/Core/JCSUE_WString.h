@@ -10,13 +10,11 @@
 
 #include <sstream>
 
-
 namespace JCSUE
 {
-
 	/**
 	 * @class JCSUE_WString
-	 * @brief Wide string, wide char array, wide char pointer 
+	 * @brief Wide string, wide char array, wide char pointer
 	 * related helper.
 	 */
 	class JCSUE_WString
@@ -97,7 +95,6 @@ namespace JCSUE
 		/* getter */
 
 	};
-
 }
 
 typedef JCSUE::JCSUE_WString JCSUE_WString;

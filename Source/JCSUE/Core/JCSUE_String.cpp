@@ -9,17 +9,15 @@
 
 #include "../JCSUE.h"
 
-
 namespace JCSUE
 {
     JCSUE_String::JCSUE_String()
     {
-
+        // empty..
     }
 
     JCSUE_String::~JCSUE_String()
     {
-
+        // empty..
     }
-
 }

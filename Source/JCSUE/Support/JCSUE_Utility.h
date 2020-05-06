@@ -9,11 +9,8 @@
  */
 #define __JCSUE_UTILITY_H__
 
-
-
 namespace JCSUE
 {
-
     /**
      * @class JCSUE_Utility
      * @brief Util function place here.
@@ -23,8 +20,6 @@ namespace JCSUE
     public:
         JCSUE_Utility();
         virtual ~JCSUE_Utility();
-
-        
 
         /* setter */
 

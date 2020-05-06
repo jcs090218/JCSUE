@@ -9,19 +9,15 @@
 
 #include "../JCSUE.h"
 
-
 namespace JCSUE
 {
-
     JCSUE_Utility::JCSUE_Utility()
     {
-
+        // empty..
     }
 
     JCSUE_Utility::~JCSUE_Utility()
     {
-
+        // empty..
     }
-
-
 }

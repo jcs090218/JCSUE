@@ -9,9 +9,7 @@
  */
 #define __JCSUE_NAME_H__
 
-
 #include <stdint.h>
-
 
 typedef int8_t int8;
 typedef int16_t int16;
@@ -46,6 +44,5 @@ typedef unsigned char byte;
 typedef __int64 int64;
 typedef unsigned __int64 uint64;
 #endif
-
 
 #endif /* __JCSUE_NAME_H__ */

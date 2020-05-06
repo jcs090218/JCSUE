@@ -9,18 +9,16 @@
 
 #include "../../JCSUE.h"
 
-
 namespace JCSUE
 {
-
     JCSUE_Easing::JCSUE_Easing()
     {
-
+        // empty..
     }
 
     JCSUE_Easing::~JCSUE_Easing()
     {
-
+        // empty..
     }
 
     // brief Easing equation function for a simple
@@ -437,5 +435,4 @@ namespace JCSUE
         // return BackEaseIn((t * 2) - d, b + c / 2, c / 2, d);
         return 0;
     }
-
 }

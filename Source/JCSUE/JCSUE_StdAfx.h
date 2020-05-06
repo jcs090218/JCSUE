@@ -10,8 +10,7 @@
 #define __JCSUE_STDAFX_H__
 
 
-// NOTE(jenchieh): comment this out if importing dll
-// We are exporting to dll file.
+// NOTE: Comment this out if importing dll we are exporting to dll file.
 #define EXPORTS_DLL
 
 // Defines import/export dynamic link library.
@@ -63,12 +62,10 @@
 #endif
 
 
-
 /**
 * @def MAX_BUFFER_LOG
 * @brief Maxinum of the buffer per log.
 */
 #define JCSUE_MAX_BUFFER_LOG 128
-
 
 #endif /* __JCSUE_STDAFX_H__ */

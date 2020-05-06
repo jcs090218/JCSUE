@@ -15,10 +15,8 @@ DECLARE_LOG_CATEGORY_EXTERN(JCSUE_Log, Log, All);
 DECLARE_LOG_CATEGORY_EXTERN(JCSUE_Error, Log, All);
 DECLARE_LOG_CATEGORY_EXTERN(JCSUE_Warning, Log, All);
 
-
 namespace JCSUE
 {
-
 	/**
 	* @class JCSUE_Debug
 	* @brief Debug related class will be design here.
@@ -69,10 +67,9 @@ namespace JCSUE
 		 * @param va : argument list.
 		 */
 		static void ConvertFinalResult(
-			wchar_t msg[], 
+			wchar_t msg[],
 			wchar_t result[],
 			va_list va);
-
 	};
 }
 

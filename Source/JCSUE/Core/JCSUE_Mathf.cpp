@@ -9,18 +9,16 @@
 
 #include "../JCSUE.h"
 
-
 namespace JCSUE
 {
-
     JCSUE_Mathf::JCSUE_Mathf()
     {
-
+        // empty..
     }
 
     JCSUE_Mathf::~JCSUE_Mathf()
     {
-
+        // empty..
     }
 
     // exponent of the base.
@@ -43,5 +41,4 @@ namespace JCSUE
     {
         return val * val;
     }
-
 }

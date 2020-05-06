@@ -9,7 +9,6 @@
 
 #include "../JCSUE.h"
 
-
 namespace JCSUE
 {
 	APlayerController* JCSUE_Input::k_pPlayerController = nullptr;
@@ -34,12 +33,12 @@ namespace JCSUE
 		if (!k_pPlayerController)
 		{
 			JCSUE_Debug::Error(
-				L"No %s in the scene, and you still trying to process the input.", 
+				L"No %s in the scene, and you still trying to process the input.",
 				L"JCSUE_Character");
 
 			return false;
 		}
-#endif 
+#endif
 
 		return k_pPlayerController->WasInputKeyJustPressed(keyCode);
 	}
@@ -95,5 +94,4 @@ namespace JCSUE
 	{
 		k_pPlayerController->SetMouseLocation(posX, posY);
 	}
-
 }

@@ -15,17 +15,16 @@ DEFINE_LOG_CATEGORY(JCSUE_Log);
 DEFINE_LOG_CATEGORY(JCSUE_Error);
 DEFINE_LOG_CATEGORY(JCSUE_Warning);
 
-
 namespace JCSUE
 {
 	JCSUE_Debug::JCSUE_Debug()
 	{
-
+        // empty..
 	}
 
 	JCSUE_Debug::~JCSUE_Debug()
 	{
-
+        // empty..
 	}
 
 	// normal logger
@@ -43,9 +42,7 @@ namespace JCSUE
 		ConvertFinalResult(temp, result, va);
 		va_end(va);
 
-		UE_LOG(JCSUE_Log, Log, TEXT("--------------------------------------------------------"));
-		UE_LOG(JCSUE_Log, Log, TEXT("* %s"), result);
-		UE_LOG(JCSUE_Log, Log, TEXT("--------------------------------------------------------"));
+		UE_LOG(JCSUE_Log, Log, TEXT("¶ %s"), result);
 	}
 
 	// error logger
@@ -60,9 +57,7 @@ namespace JCSUE
 		ConvertFinalResult(temp, result, va);
 		va_end(va);
 
-		UE_LOG(JCSUE_Error, Error, TEXT("--------------------------------------------------------"));
-		UE_LOG(JCSUE_Error, Error, TEXT("* %s"), result);
-		UE_LOG(JCSUE_Error, Error, TEXT("--------------------------------------------------------"));
+		UE_LOG(JCSUE_Error, Error, TEXT("¶ %s"), result);
 	}
 
 	// warnings logger
@@ -77,9 +72,7 @@ namespace JCSUE
 		ConvertFinalResult(temp, result, va);
 		va_end(va);
 
-		UE_LOG(JCSUE_Warning, Warning, TEXT("--------------------------------------------------------"));
-		UE_LOG(JCSUE_Warning, Warning, TEXT("* %s"), result);
-		UE_LOG(JCSUE_Warning, Warning, TEXT("--------------------------------------------------------"));
+		UE_LOG(JCSUE_Warning, Warning, TEXT("¶ %s"), result);
 	}
 
 
@@ -89,9 +82,7 @@ namespace JCSUE
 		// count holder.
 		int cnt = 0;
 
-		for (cnt = 0;
-			cnt < wcslen(msg);
-			++msg)
+		for (cnt = 0; cnt < wcslen(msg); ++msg)
 		{
 			if (*msg == '%')
 			{
@@ -113,10 +104,7 @@ namespace JCSUE
 	}
 
 	// Convert format and argument to wild char ptr.
-	void JCSUE_Debug::ConvertFinalResult(
-		wchar_t src[],
-		wchar_t dest[], 
-		va_list va)
+	void JCSUE_Debug::ConvertFinalResult(wchar_t src[], wchar_t dest[], va_list va)
 	{
 		// offset of the destination
 		int offset = 0;
@@ -127,9 +115,7 @@ namespace JCSUE
 		// flags that sees '%' char
 		bool startFlag = false;
 
-		for (unsigned int count = 0;
-			count < wcslen(src);
-			++count)
+		for (unsigned int count = 0; count < wcslen(src); ++count)
 		{
 			//UE_LOG(JCSUE_Warning, Warning, TEXT("* %s"), dest);
 
@@ -165,7 +151,7 @@ namespace JCSUE
 
 					// NOTE(jenchieh): this never get the correct value...
 					int val = va_arg(va, int);
-					
+
 					_itow_s(val, valBuffer, JCSUE_MAX_BUFFER_LOG, decimal);
 
 					// concatenate the two wide char array!
@@ -243,5 +229,4 @@ namespace JCSUE
 			}
 		}
 	}
-
 }

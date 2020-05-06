@@ -9,10 +9,8 @@
 */
 #define __JCSUE_TWEENER_H__
 
-
 namespace JCSUE
 {
-
     /**
      * @class JCSUE_Tweener
      * @brief controller of the easing class.
@@ -20,7 +18,7 @@ namespace JCSUE
     class JCSUE_Tweener
     {
     private:
-        
+
     public:
         JCSUE_Tweener();
         virtual ~JCSUE_Tweener();

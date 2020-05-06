@@ -3,7 +3,6 @@
 #include "JCSUE.h"
 #include "SomeElse.h"
 
-
 // Sets default values for this component's properties
 USomeElse::USomeElse()
 {
@@ -13,7 +12,6 @@ USomeElse::USomeElse()
 
 	// ...
 }
-
 
 // Called when the game starts
 void USomeElse::BeginPlay()
@@ -33,7 +31,6 @@ void USomeElse::BeginPlay()
 		JCSUE_Debug::Log(L"Faild to find component.");
 	}
 }
-
 
 // Called every frame
 void USomeElse::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )

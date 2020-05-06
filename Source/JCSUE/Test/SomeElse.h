@@ -5,24 +5,21 @@
 #include "Components/ActorComponent.h"
 #include "SomeElse.generated.h"
 
-
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class JCSUE_API USomeElse : public UActorComponent
 {
 	GENERATED_BODY()
 
-public:	
+public:
 	// Sets default values for this component's properties
 	USomeElse();
 
 	// Called when the game starts
 	virtual void BeginPlay() override;
-	
+
 	// Called every frame
 	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
 
-	
-		
 private:
 	UPROPERTY(VisibleAnywhere)
 	float m_someValue;

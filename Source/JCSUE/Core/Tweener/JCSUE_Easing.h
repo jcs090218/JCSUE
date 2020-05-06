@@ -9,11 +9,8 @@
  */
 #define __JCSUE_EASING_H__
 
-
-
 namespace JCSUE
 {
-
     /**
      * @class JCSUE_Easing
      * @brief Store all the easing math here.
@@ -22,7 +19,6 @@ namespace JCSUE
     {
         JCSUE_Easing();
         virtual ~JCSUE_Easing();
-
 
         /**
          * @func Linear

@@ -9,18 +9,15 @@
 
 #include "../../JCSUE.h"
 
-
 namespace JCSUE
 {
-
     JCSUE_Tweener::JCSUE_Tweener()
     {
-
+        // empty..
     }
 
     JCSUE_Tweener::~JCSUE_Tweener()
     {
-
+        // empty..
     }
-
 }

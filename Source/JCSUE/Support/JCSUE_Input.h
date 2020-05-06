@@ -10,10 +10,8 @@
 
 #include <map>
 
-
 namespace JCSUE
 {
-
 	/**
 	 * @class JCSUE_Input
 	 * @brief Handle buffer from application layer.
@@ -25,10 +23,9 @@ namespace JCSUE
 		static APlayerController* k_pPlayerController;
 
 		// check if the key is held down.
-		// NOTE(jenchieh): fast insert, delete, search, not 
+		// NOTE(jenchieh): fast insert, delete, search, not
 		// allow duplicate key.
 		static std::map<FKey, bool> k_keysDown;
-
 
 	public:
 
@@ -64,7 +61,6 @@ namespace JCSUE
 		*/
 		static bool GetKey(FKey keyCode);
 
-
 		/* setter */
 
 		/**
@@ -82,7 +78,6 @@ namespace JCSUE
 		 * @return APlayerController* : input device.
 		 */
 		static APlayerController* GetGlobalPlayerController();
-
 	};
 }
 

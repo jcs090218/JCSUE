@@ -9,10 +9,8 @@
  */
 #define __JCSUE_MATHF_H__
 
-
 namespace JCSUE
 {
-
     /**
      * @func JCSUE_Mathf
      * @brief Store all the math function here.
@@ -40,7 +38,6 @@ namespace JCSUE
          * @return float : squred value.
          */
         static float Sqr(float32 val);
-
 
         /* setter */
 

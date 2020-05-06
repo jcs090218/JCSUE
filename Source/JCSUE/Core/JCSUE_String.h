@@ -11,10 +11,8 @@
 
 #include <sstream>
 
-
 namespace JCSUE
 {
-
     /**
      * @class JCSUE_String
      * @brief String, char pointer, char array related helper.
@@ -24,8 +22,6 @@ namespace JCSUE
     public:
         JCSUE_String();
         virtual ~JCSUE_String();
-
-
 
         /* setter */
 

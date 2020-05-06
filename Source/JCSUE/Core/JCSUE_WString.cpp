@@ -13,17 +13,15 @@
 
 namespace JCSUE
 {
-
 	JCSUE_WString::JCSUE_WString()
 	{
-
+        // empty..
 	}
 
 	JCSUE_WString::~JCSUE_WString()
 	{
-
+        // empty..
 	}
-
 
 	// Concatenate two wide char array.
 	void JCSUE_WString::WCharArrayCat(wchar_t src[], wchar_t dest[], uint32 size)
@@ -49,5 +47,4 @@ namespace JCSUE
 		// simple conversion.
 		wStr = wPtr;
 	}
-
 }
