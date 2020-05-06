@@ -16,6 +16,8 @@
 :: SOURCE: https://answers.unrealengine.com/questions/166179/how-do-i-remove-a-c-class-from-my-project-code.html
 ::
 
+cd ..
+
 :ask_to_delete
 echo You sure you want to clean the Unreal Project Binaries? (y/n):
 set /p SURE=

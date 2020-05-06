@@ -12,6 +12,8 @@
 :: DESCRIPTION: clean up the unreal project.
 ::
 
+cd ..
+
 :ask_to_delete
 echo You sure you want to clean the Unreal Project? (y/n):
 set /p SURE=

@@ -12,6 +12,8 @@
 :: DESCRIPTION: pack the needed files into one zip file.
 ::
 
+cd ..
+
 :: package info
 set PACKAGE_NAME=JCSUE
 set PACKAGE_EXTENSION=.zip
