@@ -14,5 +14,16 @@ of scripts/components could generate enormous variety of
 different behaviour.
 
 
-## Demo
+## :newspaper: News
+
+* N/A
+
+
+## :link: Links
+
+* *Manual/Scripting API* : [Scripting-Manual-JCSUE](http://www.jcs-profile.com:3003)
+
+
+## :video_game: Games
+
 * N/A
