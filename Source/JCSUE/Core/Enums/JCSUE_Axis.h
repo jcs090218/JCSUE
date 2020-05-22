@@ -26,11 +26,11 @@ namespace JCSUE
 	*/
 	enum JCSUE_Axis
 	{
-		k_none,
+		k_none UMETA(DisplayName = "NONE"),
 
-		k_x,
-		k_y,
-		k_z,
+		k_x UMETA(DisplayName = "X"),
+		k_y UMETA(DisplayName = "Y"),
+		k_z UMETA(DisplayName = "Z"),
 	};
 }
 
