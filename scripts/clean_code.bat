@@ -26,15 +26,9 @@ if /i "%SURE%"=="y" goto i_am_sure
 if /i "%SURE%"=="n" goto end
 echo Incorrect input & goto ask_to_delete
 
-mkdir Binaries
+:i_am_sure
 
-FOR /D %%p IN ("%CD%*.*") DO rmdir "%%p" /s /q
-del *.* /q
-
-:: go back to root.
-cd ..
-
-rmdir Binaries
+rmdir Binaries /S /Q
 
 :: ------------ end block --------------
 :end
