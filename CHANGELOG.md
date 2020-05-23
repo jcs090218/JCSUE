@@ -9,6 +9,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 * Updated test module. (JCSUE)
 * Organized project directory structure. (JCSUE)
+* Update UE version to `4.25.0`. (JCSUE)
 
 ### 2020-05-06
 
