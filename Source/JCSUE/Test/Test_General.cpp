@@ -6,9 +6,9 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright © 2020 by Shen, Jen-Chieh $
  */
- 
-#include "JCSUE.h"
-#include "Test_General.h"
+
+#include "./Test_General.h"
+#include "../JCSUE.h"
 
 // Sets default values for this component's properties
 UTest_General::UTest_General()
@@ -22,8 +22,6 @@ UTest_General::UTest_General()
 void UTest_General::BeginPlay()
 {
 	Super::BeginPlay();
-
-	// ...
 
 	JCSUE::JCSUE_Debug::Log(L"Hello %d - %d - %d - %d", -1, 10, 33, 99);
 	JCSUE::JCSUE_Debug::Log(L"Hello %s - %s", L"Something els", L"OP");

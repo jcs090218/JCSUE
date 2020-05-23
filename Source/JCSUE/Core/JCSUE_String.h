@@ -1,4 +1,3 @@
-#ifndef __JCSUE_STRING_H__
 /**
  * $File: JCSUE_String.h $
  * $Date: 2017-03-09 13:20:09 $
@@ -7,7 +6,8 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
-#define __JCSUE_STRING_H__
+
+#pragma once
 
 #include <sstream>
 
@@ -31,5 +31,3 @@ namespace JCSUE
 }
 
 typedef JCSUE::JCSUE_String JCSUE_String;
-
-#endif /* __JCSUE_STRING_H__ */

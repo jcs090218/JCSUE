@@ -1,13 +1,12 @@
-#ifndef __JCSUE_TWEENER_H__
 /**
-* $File: JCSUE_Tweener.h $
-* $Date: 2017-03-03 21:41:07 $
-* $Revision: $
-* $Creator: Jen-Chieh Shen $
-* $Notice: See LICENSE.txt for modification and distribution information
-*                   Copyright (c) 2017 by Shen, Jen-Chieh $
-*/
-#define __JCSUE_TWEENER_H__
+ * $File: JCSUE_Tweener.h $
+ * $Date: 2017-03-03 21:41:07 $
+ * $Revision: $
+ * $Creator: Jen-Chieh Shen $
+ * $Notice: See LICENSE.txt for modification and distribution information
+ *                   Copyright (c) 2017 by Shen, Jen-Chieh $
+ */
+#pragma once
 
 namespace JCSUE
 {
@@ -30,5 +29,3 @@ namespace JCSUE
 }
 
 typedef JCSUE::JCSUE_Tweener JCSUE_Tweener;
-
-#endif /* __JCSUE_TWEENER_H__ */

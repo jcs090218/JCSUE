@@ -1,4 +1,3 @@
-#ifndef __JCSUEGAMEMODEBASE_H__
 /**
  * $File: JCSUEGameModeBase.h $
  * $Date: 2017-03-01 $
@@ -7,9 +6,19 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
-#define __JCSUEGAMEMODEBASE_H__
 
+#pragma once
+
+#include "CoreMinimal.h"
 #include "GameFramework/GameModeBase.h"
+#include "JCSUEGameModeBase.generated.h"
 
+/**
+ *
+ */
+UCLASS()
+class JCSUE_API AJCSUEGameModeBase : public AGameModeBase
+{
+    GENERATED_BODY()
 
-#endif /* __JCSUEGAMEMODEBASE_H__ */
+        };

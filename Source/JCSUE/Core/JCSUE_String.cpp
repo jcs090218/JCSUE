@@ -7,7 +7,7 @@
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
 
-#include "../JCSUE.h"
+#include "./JCSUE_String.h"
 
 namespace JCSUE
 {

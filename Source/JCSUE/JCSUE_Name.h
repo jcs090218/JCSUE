@@ -1,4 +1,3 @@
-#ifndef __JCSUE_NAME_H__
 /**
  * $File: JCSUE_Name.h $
  * $Date: 2017-03-03 22:13:03 $
@@ -7,7 +6,8 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
-#define __JCSUE_NAME_H__
+
+#pragma once
 
 #include <stdint.h>
 
@@ -44,5 +44,3 @@ typedef unsigned char byte;
 typedef __int64 int64;
 typedef unsigned __int64 uint64;
 #endif
-
-#endif /* __JCSUE_NAME_H__ */

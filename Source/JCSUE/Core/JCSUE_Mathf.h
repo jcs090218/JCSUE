@@ -1,4 +1,3 @@
-#ifndef __JCSUE_MATHF_H__
 /**
  * $File: JCSUE_Mathf.h $
  * $Date: 2017-03-03 22:02:29 $
@@ -7,7 +6,9 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
-#define __JCSUE_MATHF_H__
+#pragma once
+
+#include "../JCSUE.h"
 
 namespace JCSUE
 {
@@ -47,5 +48,3 @@ namespace JCSUE
 }
 
 typedef JCSUE::JCSUE_Mathf JCSUE_Mathf;
-
-#endif /* __JCSUE_MATHF_H__ */

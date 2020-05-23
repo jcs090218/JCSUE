@@ -1,4 +1,3 @@
-#ifndef __JCSUE_STDAFX_H__
 /**
  * $File: JCSUE_StdAfx.h $
  * $Date: 2017-02-26 15:18:31 $
@@ -7,8 +6,8 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
-#define __JCSUE_STDAFX_H__
 
+#pragma once
 
 // NOTE: Comment this out if importing dll we are exporting to dll file.
 #define EXPORTS_DLL
@@ -63,9 +62,7 @@
 
 
 /**
-* @def MAX_BUFFER_LOG
-* @brief Maxinum of the buffer per log.
-*/
+ * @def MAX_BUFFER_LOG
+ * @brief Maxinum of the buffer per log.
+ */
 #define JCSUE_MAX_BUFFER_LOG 128
-
-#endif /* __JCSUE_STDAFX_H__ */

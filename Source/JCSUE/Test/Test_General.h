@@ -9,30 +9,31 @@
 
 #pragma once
 
+#include "../JCSUE.h"
 #include "Components/ActorComponent.h"
 #include "Test_General.generated.h"
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class JCSUE_API UTest_General : public UActorComponent
 {
-	GENERATED_BODY()
+    GENERATED_BODY()
 
-public:	
-	// Sets default values for this component's properties
-	UTest_General();
+public:
+    // Sets default values for this component's properties
+    UTest_General();
 
-	// Called when the game starts
-	virtual void BeginPlay() override;
-	
-	// Called every frame
-	virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
-		
+    // Called when the game starts
+    virtual void BeginPlay() override;
+
+    // Called every frame
+    virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
+
 private:
-	UPROPERTY(VisibleAnywhere)
-	float m_someValue;
+    UPROPERTY(VisibleAnywhere)
+    float m_someValue;
 
-	UPROPERTY(EditAnywhere, Category = Enum)
-	TEnumAsByte<JCSUE::JCSUE_Axis> m_axis = JCSUE::JCSUE_Axis::k_x;
+    UPROPERTY(EditAnywhere, Category = Enum)
+    TEnumAsByte<JCSUE::JCSUE_Axis> m_axis = JCSUE::JCSUE_Axis::k_x;
 
-	UInputComponent* m_pInputComponent = nullptr;
+    UInputComponent* m_pInputComponent = nullptr;
 };

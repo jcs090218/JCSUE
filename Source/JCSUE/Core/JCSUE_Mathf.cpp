@@ -7,6 +7,7 @@
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
 
+#include "./JCSUE_Mathf.h"
 #include "../JCSUE.h"
 
 namespace JCSUE

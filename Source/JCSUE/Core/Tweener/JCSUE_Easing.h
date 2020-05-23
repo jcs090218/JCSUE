@@ -1,4 +1,3 @@
-#ifndef __JCSUE_EASING_H__
 /**
  * $File: JCSUE_Easing.h $
  * $Date: 2017-03-03 21:48:35 $
@@ -7,7 +6,10 @@
  * $Notice: See LICENSE.txt for modification and distribution information
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
-#define __JCSUE_EASING_H__
+
+#pragma once
+
+#include "../../JCSUE.h"
 
 namespace JCSUE
 {
@@ -544,5 +546,3 @@ namespace JCSUE
 }
 
 typedef JCSUE::JCSUE_Easing JCSUE_Easing;
-
-#endif /* __JCSUE_EASING_H__ */
