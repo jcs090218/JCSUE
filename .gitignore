@@ -1,6 +1,7 @@
 # ingnore the these directories
 /.git
 /.vs
+/.vscode
 /Binaries
 /Build
 /DerivedDataCache
