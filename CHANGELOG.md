@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
+### 2020-05-24
+
+* Moved into `Plugins` folder => `JCSUE_Plugin`. (JCSUE)
+* Tested package into plugin => `failed`. (JCSUE)
+
 ### 2020-05-23
 
 * Updated test module. (JCSUE)
