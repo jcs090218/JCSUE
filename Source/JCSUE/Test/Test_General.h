@@ -32,8 +32,8 @@ private:
     UPROPERTY(VisibleAnywhere)
     float m_someValue;
 
-    UPROPERTY(EditAnywhere, Category = Enum)
-    TEnumAsByte<JCSUE::JCSUE_Axis> m_axis = JCSUE::JCSUE_Axis::k_x;
+    //UPROPERTY(EditAnywhere, Category = Enum)
+    TEnumAsByte<JCSUE_Axis> m_axis = JCSUE_Axis::k_x;
 
     UInputComponent* m_pInputComponent = nullptr;
 };

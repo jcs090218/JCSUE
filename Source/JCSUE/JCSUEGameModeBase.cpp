@@ -7,5 +7,5 @@
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
 
-#include "JCSUE.h"
 #include "JCSUEGameModeBase.h"
+#include "JCSUE.h"

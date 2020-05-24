@@ -8,7 +8,6 @@
  */
 
 #include "./Test_General.h"
-#include "../JCSUE.h"
 
 // Sets default values for this component's properties
 UTest_General::UTest_General()
@@ -23,15 +22,15 @@ void UTest_General::BeginPlay()
 {
 	Super::BeginPlay();
 
-	JCSUE::JCSUE_Debug::Log(L"Hello %d - %d - %d - %d", -1, 10, 33, 99);
-	JCSUE::JCSUE_Debug::Log(L"Hello %s - %s", L"Something els", L"OP");
-	JCSUE::JCSUE_Debug::Log(L"Hello %f", 12.321f);
+	//JCSUE_Debug::Log(L"Hello %d - %d - %d - %d", -1, 10, 33, 99);
+	//JCSUE_Debug::Log(L"Hello %s - %s", L"Something els", L"OP");
+	//JCSUE_Debug::Log(L"Hello %f", 12.321f);
 
 	m_pInputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
 
 	if (!m_pInputComponent)
 	{
-		JCSUE_Debug::Log(L"Faild to find component.");
+		//JCSUE_Debug::Log(L"Faild to find component.");
 	}
 }
 
