@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_StdAfx.h $
+ * $File: JCS_StdAfx.h $
  * $Date: 2017-02-26 15:18:31 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -18,30 +18,30 @@
 #if defined (_MSC_VER)
 // Microsoft
 #define DECLSPEC_ACTION __declspec(dllimport)
-#define JCSUE_DLL __declspec(dllimport)
+#define JCS_DLL __declspec(dllimport)
 #elif defined (__GNUC__)
 // GCC
 #define DECLSPEC_ACTION __attribute__((visibility(dllimport)))
-#define JCSUE_DLL __attribute__((visibility(dllimport)))
+#define JCS_DLL __attribute__((visibility(dllimport)))
 #else
 // Default
 #define DECLSPEC_ACTION
-#define JCSUE_DLL
+#define JCS_DLL
 #endif
 #else
 // Export
 #if defined (_MSC_VER)
 // Microsoft
 #define DECLSPEC_ACTION __declspec(dllexport)
-#define JCSUE_DLL __declspec(dllexport)
+#define JCS_DLL __declspec(dllexport)
 #elif defined (__GNUC__)
 // GCC
 #define DECLSPEC_ACTION __attribute__((visibility(dllexport)))
-#define JCSUE_DLL __attribute__((visibility(dllexport)))
+#define JCS_DLL __attribute__((visibility(dllexport)))
 #else
 // Default
 #define DECLSPEC_ACTION
-#define JCSUE_DLL
+#define JCS_DLL
 #endif
 #endif
 
@@ -65,4 +65,4 @@
  * @def MAX_BUFFER_LOG
  * @brief Maxinum of the buffer per log.
  */
-#define JCSUE_MAX_BUFFER_LOG 128
+#define JCS_MAX_BUFFER_LOG 128

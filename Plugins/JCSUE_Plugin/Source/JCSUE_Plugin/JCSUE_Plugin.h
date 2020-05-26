@@ -23,34 +23,34 @@ public:
 
 #ifdef UE_BUILD_DEBUG
 /**
- * @def JCSUE_DEBUG
+ * @def JCS_DEBUG
  * @brief Debug macro
  */
-#define JCSUE_DEBUG
+#define JCS_DEBUG
 #else
 /**
- * @def JCSUE_DEBUG
+ * @def JCS_DEBUG
  * @brief Release macro
  */
 #define JCSUE_RELEASE
 #endif
 
  // defines
-#include "JCSUE_StdAfx.h"
-#include "JCSUE_Name.h"
+#include "JCS_StdAfx.h"
+#include "JCS_Name.h"
 
 // enums
-#include "Core/Enums/JCSUE_Axis.h"
-#include "Core/Enums/JCSUE_Keys.h"
+#include "Core/Enums/JCS_Axis.h"
+#include "Core/Enums/JCS_Keys.h"
 
 // supoort
-#include "Supports/JCSUE_Debug.h"
-#include "Supports/JCSUE_Utility.h"
-#include "Supports/JCSUE_Input.h"
+#include "Supports/JCS_Debug.h"
+#include "Supports/JCS_Utility.h"
+#include "Supports/JCS_Input.h"
 
 // core
-#include "Core/JCSUE_Mathf.h"
-#include "Core/JCSUE_String.h"
-#include "Core/JCSUE_WString.h"
-#include "Core/Tweener/JCSUE_Tweener.h"
-#include "Core/Tweener/JCSUE_Easing.h"
+#include "Core/JCS_Mathf.h"
+#include "Core/JCS_String.h"
+#include "Core/JCS_WString.h"
+#include "Core/Tweener/JCS_Tweener.h"
+#include "Core/Tweener/JCS_Easing.h"

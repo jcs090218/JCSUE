@@ -33,7 +33,7 @@ private:
     float m_someValue;
 
     //UPROPERTY(EditAnywhere, Category = Enum)
-    TEnumAsByte<JCSUE_Axis> m_axis = JCSUE_Axis::k_x;
+    TEnumAsByte<JCS_Axis> m_axis = JCS_Axis::k_x;
 
     UInputComponent* m_pInputComponent = nullptr;
 };

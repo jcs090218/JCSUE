@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_Keys.h $
+ * $File: JCS_Keys.h $
  * $Date: 2017-03-11 22:44:44 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -10,11 +10,10 @@
 #pragma once
 
  /**
-  * @enum JCSUE_Keys
+  * @enum JCS_Keys
   * @brief Key defines.
   */
-enum class JCSUE_Keys
+enum class JCS_Keys
 {
-	k_none,
+    k_none,
 };
-

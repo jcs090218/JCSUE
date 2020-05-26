@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_Utility.h $
+ * $File: JCS_Utility.h $
  * $Date: 2017-03-09 00:47:22 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -10,17 +10,17 @@
 #pragma once
 
 /**
- * @class JCSUE_Utility
+ * @class JCS_Utility
  * @brief Util function place here.
  */
-class JCSUE_Utility
+class JCS_Utility
 {
 public:
-	JCSUE_Utility();
-	virtual ~JCSUE_Utility();
+    JCS_Utility();
+    virtual ~JCS_Utility();
 
-	/* setter */
+    /* setter */
 
-	/* getter */
+    /* getter */
 
 };

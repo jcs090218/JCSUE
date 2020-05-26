@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_Axis.h $
+ * $File: JCS_Axis.h $
  * $Date: 2017-03-10 00:19:20 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -14,15 +14,15 @@
 #pragma once
 
 /**
- * @enum JCSUE_Axis
+ * @enum JCS_Axis
  * @brief x, y, z axis.
  */
 UENUM()
-enum JCSUE_Axis
+enum JCS_Axis
 {
-	k_none UMETA(DisplayName = "NONE"),
+    k_none UMETA(DisplayName = "NONE"),
 
-	k_x UMETA(DisplayName = "X"),
-	k_y UMETA(DisplayName = "Y"),
-	k_z UMETA(DisplayName = "Z"),
+    k_x UMETA(DisplayName = "X"),
+    k_y UMETA(DisplayName = "Y"),
+    k_z UMETA(DisplayName = "Z"),
 };

@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_Tweener.h $
+ * $File: JCS_Tweener.h $
  * $Date: 2017-03-03 21:41:07 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -9,18 +9,18 @@
 #pragma once
 
 /**
- * @class JCSUE_Tweener
+ * @class JCS_Tweener
  * @brief controller of the easing class.
  */
-class JCSUE_Tweener
+class JCS_Tweener
 {
 private:
 
 public:
-	JCSUE_Tweener();
-	virtual ~JCSUE_Tweener();
+    JCS_Tweener();
+    virtual ~JCS_Tweener();
 
-	/* setter */
+    /* setter */
 
-	/* getter */
+    /* getter */
 };

@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_String.h $
+ * $File: JCS_String.h $
  * $Date: 2017-03-09 13:20:09 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -12,17 +12,17 @@
 #include <sstream>
 
 /**
- * @class JCSUE_String
+ * @class JCS_String
  * @brief String, char pointer, char array related helper.
  */
-class JCSUE_String
+class JCS_String
 {
 public:
-	JCSUE_String();
-	virtual ~JCSUE_String();
+    JCS_String();
+    virtual ~JCS_String();
 
-	/* setter */
+    /* setter */
 
-	/* getter */
+    /* getter */
 
 };

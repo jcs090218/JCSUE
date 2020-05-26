@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_String.cpp $
+ * $File: JCS_String.cpp $
  * $Date: 2017-03-09 13:20:11 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -7,14 +7,14 @@
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
 
-#include "./JCSUE_String.h"
+#include "./JCS_String.h"
 
-JCSUE_String::JCSUE_String()
+JCS_String::JCS_String()
 {
-	// empty..
+    // empty..
 }
 
-JCSUE_String::~JCSUE_String()
+JCS_String::~JCS_String()
 {
-	// empty..
+    // empty..
 }

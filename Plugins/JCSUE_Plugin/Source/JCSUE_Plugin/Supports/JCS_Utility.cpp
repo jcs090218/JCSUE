@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_Utility.cpp $
+ * $File: JCS_Utility.cpp $
  * $Date: 2017-03-09 00:47:25 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -7,15 +7,15 @@
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
 
-#include "./JCSUE_Utility.h"
+#include "./JCS_Utility.h"
 #include "../JCSUE_Plugin.h"
 
-JCSUE_Utility::JCSUE_Utility()
+JCS_Utility::JCS_Utility()
 {
-	// empty..
+    // empty..
 }
 
-JCSUE_Utility::~JCSUE_Utility()
+JCS_Utility::~JCS_Utility()
 {
-	// empty..
+    // empty..
 }

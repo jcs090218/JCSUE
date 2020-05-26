@@ -12,31 +12,30 @@
 // Sets default values for this component's properties
 UTest_General::UTest_General()
 {
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
-	PrimaryComponentTick.bCanEverTick = true;
+    // Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
+    // off to improve performance if you don't need them.
+    PrimaryComponentTick.bCanEverTick = true;
 }
 
 // Called when the game starts
 void UTest_General::BeginPlay()
 {
-	Super::BeginPlay();
+    Super::BeginPlay();
 
-	//JCSUE_Debug::Log(L"Hello %d - %d - %d - %d", -1, 10, 33, 99);
-	//JCSUE_Debug::Log(L"Hello %s - %s", L"Something els", L"OP");
-	//JCSUE_Debug::Log(L"Hello %f", 12.321f);
+    //JCS_Debug::Log(L"Hello %d - %d - %d - %d", -1, 10, 33, 99);
+    //JCS_Debug::Log(L"Hello %s - %s", L"Something els", L"OP");
+    //JCS_Debug::Log(L"Hello %f", 12.321f);
 
-	m_pInputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
+    m_pInputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
 
-	if (!m_pInputComponent)
-	{
-		//JCSUE_Debug::Log(L"Faild to find component.");
-	}
+    if (!m_pInputComponent)
+    {
+        //JCS_Debug::Log(L"Faild to find component.");
+    }
 }
 
 // Called every frame
 void UTest_General::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
-	Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
+    Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
 }
-

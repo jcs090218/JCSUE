@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_Character.h $
+ * $File: JCS_Character.h $
  * $Date: 2020-05-23 19:56:18 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -10,10 +10,10 @@
 #pragma once
 
 #include "GameFramework/Character.h"
-#include "JCSUE_Character.generated.h"
+#include "JCS_Character.generated.h"
 
 UCLASS()
-class JCSUE_PLUGIN_API AJCSUE_Character : public ACharacter
+class JCSUE_PLUGIN_API AJCS_Character : public ACharacter
 {
 private:
     GENERATED_BODY()
@@ -22,7 +22,7 @@ private:
 
 public:
     // Sets default values for this character's properties
-    AJCSUE_Character();
+    AJCS_Character();
 
     // Called when the game starts or when spawned
     virtual void BeginPlay() override;

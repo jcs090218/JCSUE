@@ -1,5 +1,5 @@
 /**
- * $File: JCSUE_Tweener.cpp $
+ * $File: JCS_Tweener.cpp $
  * $Date: 2017-03-03 21:41:10 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
@@ -7,15 +7,15 @@
  *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
 
-#include "./JCSUE_Tweener.h"
+#include "./JCS_Tweener.h"
 #include "../../JCSUE_Plugin.h"
 
-JCSUE_Tweener::JCSUE_Tweener()
+JCS_Tweener::JCS_Tweener()
 {
-	// empty..
+    // empty..
 }
 
-JCSUE_Tweener::~JCSUE_Tweener()
+JCS_Tweener::~JCS_Tweener()
 {
-	// empty..
+    // empty..
 }
