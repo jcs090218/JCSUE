@@ -1,10 +1,10 @@
 /**
- * $File: JCS_GoStraightAction.h $
- * $Date: 2020-05-26 22:20:06 $
+ * $File: JCS_RotateAction.h $
+ * $Date: 2017-03-11 14:25:53 $
  * $Revision: $
  * $Creator: Jen-Chieh Shen $
  * $Notice: See LICENSE.txt for modification and distribution information
- *                   Copyright © 2020 by Shen, Jen-Chieh $
+ *                   Copyright (c) 2017 by Shen, Jen-Chieh $
  */
 
 #pragma once
@@ -12,14 +12,10 @@
 #include "../../JCSUE_Plugin.h"
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
-#include "JCS_GoStraightAction.generated.h"
+#include "JCS_RotateAction.generated.h"
 
-/**
- * @class JCSUE_PLUGIN_API
- * @brief Class description here..
- */
-UCLASS(ClassGroup=(Custom), meta=(BlueprintSpawnableComponent))
-class JCSUE_PLUGIN_API UJCS_GoStraightAction : public UActorComponent
+UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
+class JCSUE_PLUGIN_API UJCS_RotateAction : public UActorComponent
 {
     GENERATED_BODY()
 
@@ -34,18 +30,19 @@ private:
 
     // How fast actor rotate.
     UPROPERTY(EditAnywhere, Category = "Runtime Variables")
-    float m_moveSpeed = 10.0f;
+    float m_rotateSpeed = 10.0f;
 
     // current actor.
     AActor* m_pActor = nullptr;
 
 public:
-    UJCS_GoStraightAction();
+    // Sets default values for this component's properties
+    UJCS_RotateAction();
 
-protected:
+    // Called when the game starts
     virtual void BeginPlay() override;
 
-public:
+    // Called every frame
     virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
 private:
