@@ -17,20 +17,24 @@
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class JCSUE_PLUGIN_API UJCS_RotateAction : public UActorComponent
 {
-    GENERATED_BODY()
+public:
+    UPROPERTY(EditAnywhere, 
+        Category = "Runtime Variables",
+        meta = (ToolTip = "Flag to check active this component."))
+    bool active = true;
+
+    //UPROPERTY(EditAnywhere, 
+    //    Category = "Runtime Variables",
+    //    meta = (ToolTip = "Axis this actor rotate."))
+    TEnumAsByte<JCS_Axis> axis = JCS_Axis::k_x;
+
+    UPROPERTY(EditAnywhere, 
+        Category = "Runtime Variables",
+        meta = (ToolTip = "How fast actor rotate."))
+    float rotateSpeed = 10.0f;
 
 private:
-    // Flag to check active this component.
-    UPROPERTY(EditAnywhere, Category = "Runtime Variables")
-    bool m_active = true;
-
-    // Axis this actor rotate.
-    //UPROPERTY(EditAnywhere, Category = "Runtime Variables")
-    TEnumAsByte<JCS_Axis> m_axis = JCS_Axis::k_x;
-
-    // How fast actor rotate.
-    UPROPERTY(EditAnywhere, Category = "Runtime Variables")
-    float m_rotateSpeed = 10.0f;
+    GENERATED_BODY()
 
     // current actor.
     AActor* m_pActor = nullptr;

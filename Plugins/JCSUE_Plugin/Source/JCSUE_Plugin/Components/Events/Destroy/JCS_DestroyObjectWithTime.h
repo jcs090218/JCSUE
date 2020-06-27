@@ -21,7 +21,8 @@ UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class JCSUE_PLUGIN_API UJCS_DestroyObjectWithTime : public UActorComponent
 {
 public:
-    UPROPERTY(EditAnywhere, Category = "Runtime Variables",
+    UPROPERTY(EditAnywhere,
+        Category = "Runtime Variables",
         meta = (ToolTip = "Time to live before destory."))
     float timeToDestroy = 5.0f;
 

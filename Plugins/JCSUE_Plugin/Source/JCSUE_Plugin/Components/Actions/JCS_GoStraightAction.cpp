@@ -31,33 +31,31 @@ void UJCS_GoStraightAction::TickComponent(float DeltaTime, ELevelTick TickType, 
 #endif
 
     // check if action active?
-    if (!m_active)
+    if (!active)
         return;
 
     FVector newPos = m_pActor->GetTransform().GetLocation();
 
     // do action.
-    switch (m_axis)
+    switch (axis)
     {
     case JCS_Axis::k_x:
     {
-        newPos.X += m_moveSpeed * DeltaTime;
+        newPos.X += moveSpeed * DeltaTime;
     }
     break;
     case JCS_Axis::k_y:
     {
         
-        newPos.Y += m_moveSpeed * DeltaTime;
+        newPos.Y += moveSpeed * DeltaTime;
     }
     break;
     case JCS_Axis::k_z:
     {
-        newPos.Z += m_moveSpeed * DeltaTime;
+        newPos.Z += moveSpeed * DeltaTime;
     }
     break;
     }
-
-    JCS_Debug::Log(L"%s", newPos);
 
     m_pActor->SetActorLocation(newPos);
 }

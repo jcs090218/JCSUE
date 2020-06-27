@@ -31,27 +31,27 @@ void UJCS_RotateAction::TickComponent(float DeltaTime, ELevelTick TickType, FAct
 #endif
 
     // check if action active?
-    if (!m_active)
+    if (!active)
         return;
 
     // do action.
-    switch (m_axis)
+    switch (axis)
     {
     case JCS_Axis::k_x:
     {
-        FRotator newRotation = FRotator(m_rotateSpeed * DeltaTime, 0, 0);
+        FRotator newRotation = FRotator(rotateSpeed * DeltaTime, 0, 0);
         m_pActor->AddActorLocalRotation(newRotation);
     }
     break;
     case JCS_Axis::k_y:
     {
-        FRotator newRotation = FRotator(0, m_rotateSpeed * DeltaTime, 0);
+        FRotator newRotation = FRotator(0, rotateSpeed * DeltaTime, 0);
         m_pActor->AddActorLocalRotation(newRotation);
     }
     break;
     case JCS_Axis::k_z:
     {
-        FRotator newRotation = FRotator(0, 0, m_rotateSpeed * DeltaTime);
+        FRotator newRotation = FRotator(0, 0, rotateSpeed * DeltaTime);
         m_pActor->AddActorLocalRotation(newRotation);
     }
     break;
@@ -64,7 +64,7 @@ void UJCS_RotateAction::Test()
 {
     if (JCS_Input::GetKeyDown(EKeys::K))
     {
-        m_active = !m_active;
+        active = !active;
     }
 }
 #endif
