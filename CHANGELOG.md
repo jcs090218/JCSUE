@@ -11,50 +11,50 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### 2020-05-26
 
-* Implemented `JCS_GoStraightAction` component. (JCSUE)
+* Implemented `JCS_GoStraightAction` component.
 
 ### 2020-05-24
 
-* Moved into `Plugins` folder => `JCSUE_Plugin`. (JCSUE)
-* Tested package into plugin => `failed`. (JCSUE)
+* Moved into `Plugins` folder => `JCSUE_Plugin`.
+* Tested package into plugin => `failed`.
 
 ### 2020-05-23
 
-* Updated test module. (JCSUE)
-* Organized project directory structure. (JCSUE)
-* Update UE version to `4.25.0`. (JCSUE)
+* Updated test module.
+* Organized project directory structure.
+* Update UE version to `4.25.0`.
 
 ### 2020-05-06
 
-* Clean up and org project. (JCSUE)
+* Clean up and org project.
 
 ### 2017-10-15
 
-* Update UE4 version to 4.14.3. (JCSUE)
+* Update UE4 version to `4.14.3`.
 
 ### 2017-03-11
 
-* JCSUE_RotateAction implemented. (JCSUE)
-* JCSUE_Input implemented. (JCSUE)
+* Implmeneted `JCS_RotateAction` component.
+* Implmeneted `JCS_Input` script.
 
 ### 2017-03-09
 
-* JCSUE_Utility implmented. (JCSUE)
-* JCSUE_Axis implmented Enum test success. (JCSUE)
+* Implmeneted `JCS_Utility` script.
+* Implmeneted `JCS_Axis` script, for `Enum` test.
 
 ### 2017-03-03
 
-* setup the general UE project batch file. (General UE)
-* JCSUE_Name implmeneted. (JCSUE)
-* JCSUE_Debug implmented. (JCSUE)
-* JCSUE_Mathf implmented. (JCSUE)
-* JCSUE_Easing implmented. (JCSUE)
-* JCSUE_Tweener start implemented. (JCSUE)
+* Setup the general UE project batch file.
+* Implmeneted `JCS_Name` script.
+* Implmeneted `JCS_Debug` script.
+* Implmeneted `JCS_Mathf` script.
+* Implmeneted `JCS_Easing` script.
+* Start implementing `JCS_Tweener`.
 
 ### 2017-03-01
 
-* setup the plugin batch file. (Plugin)
+* Setup the plugin batch file.
 
 ### 2017-02-24
 
-* first setup the plugin/bundle. (JCSUE)
+* First setup the plugin/bundle.
