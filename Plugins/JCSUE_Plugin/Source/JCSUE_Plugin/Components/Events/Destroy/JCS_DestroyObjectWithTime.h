@@ -39,12 +39,12 @@ public:
     virtual void BeginPlay() override;
     virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-    void DoDestroy(float DeltaTime);
-
     /* operator */
 
     /* setter */
 
     /* getter */
 
+private:
+    void DoDestroy(float DeltaTime);
 };
