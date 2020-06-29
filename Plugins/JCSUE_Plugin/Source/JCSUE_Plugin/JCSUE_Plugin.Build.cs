@@ -10,14 +10,14 @@ public class JCSUE_Plugin : ModuleRules
 		
 		PublicIncludePaths.AddRange(
 			new string[] {
-				// ... add public include paths required here ...
+				"JCSUE_Plugin/Source",
 			}
 			);
 				
 		
 		PrivateIncludePaths.AddRange(
 			new string[] {
-				// ... add other private include paths required here ...
+				"JCSUE_Plugin/Source"
 			}
 			);
 			
