@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
+### 2020-06-29
+
+* Added widget test.
+* Fixed `JCS_Debug` wasn't working issue.
+
 ### 2020-06-28
 
 * Created new component module `Events`.
