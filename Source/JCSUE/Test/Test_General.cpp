@@ -9,18 +9,32 @@
 
 #include "./Test_General.h"
 
-// Sets default values for this component's properties
 UTest_General::UTest_General()
 {
-    // Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-    // off to improve performance if you don't need them.
     PrimaryComponentTick.bCanEverTick = true;
 }
 
-// Called when the game starts
 void UTest_General::BeginPlay()
 {
     Super::BeginPlay();
+
+    if (this->m_pTestWidget)
+    {
+        this->m_pTestWidget->RemoveFromViewport();
+        this->m_pTestWidget = nullptr;
+    }
+
+    if (UClass* testWidget = LoadClass<UUserWidget>(NULL, TEXT("/Game/JCSUE/GUI/_Test._Test_C")))
+    {
+        if (APlayerController* p_PC = GetWorld()->GetFirstPlayerController())
+        {
+            this->m_pTestWidget = CreateWidget<UUserWidget>(p_PC, testWidget);
+            if (this->m_pTestWidget)
+            {
+                this->m_pTestWidget->AddToViewport();
+            }
+        }
+    }
 
     //JCS_Debug::Log(L"Hello %d - %d - %d - %d", -1, 10, 33, 99);
     //JCS_Debug::Log(L"Hello %s - %s", L"Something els", L"OP");
@@ -34,7 +48,6 @@ void UTest_General::BeginPlay()
     }
 }
 
-// Called every frame
 void UTest_General::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
 {
     Super::TickComponent( DeltaTime, TickType, ThisTickFunction );

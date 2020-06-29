@@ -12,6 +12,6 @@
 // UE defines
 #include "Engine.h"
 
-#include "../../Plugins/JCSUE_PLugin/Source/JCSUE_PLugin/JCSUE_Plugin.h"
+#include "JCSUE_PLugin/JCSUE_Plugin.h"
 #include "Test/Test_General.h"
 #include "Test/Test_OrderEvent.h"
