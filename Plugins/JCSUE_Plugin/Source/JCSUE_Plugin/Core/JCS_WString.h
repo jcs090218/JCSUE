@@ -18,7 +18,7 @@
   * @brief Wide string, wide char array, wide char pointer
   * related helper.
   */
-class JCS_WString
+class JCSUE_PLUGIN_API JCS_WString
 {
 public:
     JCS_WString();

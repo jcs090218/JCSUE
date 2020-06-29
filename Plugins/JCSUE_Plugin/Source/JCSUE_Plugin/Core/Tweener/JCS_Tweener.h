@@ -12,7 +12,7 @@
  * @class JCS_Tweener
  * @brief controller of the easing class.
  */
-class JCS_Tweener
+class JCSUE_PLUGIN_API JCS_Tweener
 {
 private:
 

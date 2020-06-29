@@ -15,7 +15,7 @@
   * @brief Store all the math function here.
   * P.S. very simple.
   */
-class JCS_Mathf
+class JCSUE_PLUGIN_API JCS_Mathf
 {
 public:
     JCS_Mathf();

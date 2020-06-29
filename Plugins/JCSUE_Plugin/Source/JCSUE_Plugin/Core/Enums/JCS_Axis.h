@@ -18,7 +18,7 @@
  * @brief x, y, z axis.
  */
 UENUM()
-enum JCS_Axis
+enum class JCS_Axis
 {
     k_none UMETA(DisplayName = "NONE"),
 

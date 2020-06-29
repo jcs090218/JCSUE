@@ -19,7 +19,7 @@ DECLARE_LOG_CATEGORY_EXTERN(JCS_Warning, Log, All);
  * @class JCS_Debug
  * @brief Debug related class will be design here.
  */
-class JCS_Debug
+class JCSUE_PLUGIN_API JCS_Debug
 {
 public:
     JCS_Debug();

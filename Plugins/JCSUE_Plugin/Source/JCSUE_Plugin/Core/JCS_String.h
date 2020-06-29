@@ -15,7 +15,7 @@
  * @class JCS_String
  * @brief String, char pointer, char array related helper.
  */
-class JCS_String
+class JCSUE_PLUGIN_API JCS_String
 {
 public:
     JCS_String();

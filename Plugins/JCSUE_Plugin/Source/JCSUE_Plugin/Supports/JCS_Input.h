@@ -15,7 +15,7 @@
   * @class JCS_Input
   * @brief Handle buffer from application layer.
   */
-class JCS_Input
+class JCSUE_PLUGIN_API JCS_Input
 {
 private:
     // global player controller.

@@ -15,7 +15,7 @@
   * @class JCS_Easing
   * @brief Store all the easing math here.
   */
-class JCS_Easing
+class JCSUE_PLUGIN_API JCS_Easing
 {
     JCS_Easing();
     virtual ~JCS_Easing();

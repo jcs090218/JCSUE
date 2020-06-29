@@ -13,7 +13,7 @@
  * @class JCS_Utility
  * @brief Util function place here.
  */
-class JCS_Utility
+class JCSUE_PLUGIN_API JCS_Utility
 {
 public:
     JCS_Utility();
