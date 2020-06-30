@@ -18,7 +18,7 @@ void UTest_OrderEvent::BeginPlay()
 {
     Super::BeginPlay();
 
-    m_pOrderEvent = Cast<UJCS_OrderEvent>(GetOwner()->GetComponentByClass(UJCS_OrderEvent::StaticClass()));
+    m_pOrderEvent = JCS_Utility::GetComponent<UJCS_OrderEvent>(GetOwner());
 
     m_pOrderEvent->StartEvent(this->intervalTime, [this]()
     {

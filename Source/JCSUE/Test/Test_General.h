@@ -32,8 +32,8 @@ public:
     UPROPERTY(EditAnywhere)
         AActor* orderEvent;
 
-    UPROPERTY(EditAnywhere)
-        USceneComponent* comps;
+    UPROPERTY(EditAnywhere, meta=(UseComponentPicker, AllowedClasses="JCS_OrderEvent"))
+        FComponentReference comps;
 
 private:
     UPROPERTY(VisibleAnywhere)

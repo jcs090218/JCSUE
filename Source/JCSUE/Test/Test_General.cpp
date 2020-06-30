@@ -51,4 +51,16 @@ void UTest_General::BeginPlay()
 void UTest_General::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
     Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
+
+    if (JCS_Input::GetKeyDown(EKeys::K))
+    {
+        auto component = comps.GetComponent(GetOwner());
+
+        UJCS_OrderEvent* oe = Cast<UJCS_OrderEvent>(component);
+
+        oe->StartEvent(0.5f, []() 
+        {
+            JCS_Debug::Log(L"Event event call call~~");
+        });
+    }
 }
