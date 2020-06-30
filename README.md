@@ -25,7 +25,7 @@ and just drop it into your project's plugins folder, e.g. `YourProject/Plugins/`
 #### 2. Edit Build.cs
 
 Edit your project's `YourProject.Build.cs` file located at `Source/YourProject/YourProject.Build.cs`
-by adding `"JCSUE_Plugin"` to your `PublicDependencyModuleNames` array. Like, 
+by adding `JCSUE_Plugin` to your `PublicDependencyModuleNames` array. Like, 
 
 ```cs
 PublicDependencyModuleNames.AddRange(new string[] { ..., "JCSUE_Plugin" });
