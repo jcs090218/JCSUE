@@ -19,17 +19,17 @@ class JCSUE_PLUGIN_API UJCS_RotateAction : public UActorComponent
 {
 public:
     UPROPERTY(EditAnywhere, 
-        Category = "Runtime Variables",
+        Category = JCS_RUNTIME_VARS,
         meta = (ToolTip = "Flag to check active this component."))
     bool active = true;
 
     //UPROPERTY(EditAnywhere, 
-    //    Category = "Runtime Variables",
+    //    Category = JCS_RUNTIME_VARS,
     //    meta = (ToolTip = "Axis this actor rotate."))
     TEnumAsByte<JCS_Axis> axis = JCS_Axis::k_x;
 
     UPROPERTY(EditAnywhere, 
-        Category = "Runtime Variables",
+        Category = JCS_RUNTIME_VARS,
         meta = (ToolTip = "How fast actor rotate."))
     float rotateSpeed = 10.0f;
 

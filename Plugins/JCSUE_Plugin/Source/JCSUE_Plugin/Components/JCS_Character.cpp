@@ -10,14 +10,11 @@
 #include "./JCS_Character.h"
 #include "../JCSUE_Plugin.h"
 
-// Sets default values
 AJCS_Character::AJCS_Character()
 {
-    // Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
     PrimaryActorTick.bCanEverTick = true;
 }
 
-// Called when the game starts or when spawned
 void AJCS_Character::BeginPlay()
 {
     Super::BeginPlay();
@@ -35,7 +32,6 @@ void AJCS_Character::BeginPlay()
     }
 }
 
-// Called every frame
 void AJCS_Character::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
@@ -53,7 +49,6 @@ void AJCS_Character::Tick(float DeltaTime)
 #endif
 }
 
-// Called to bind functionality to input
 void AJCS_Character::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
     Super::SetupPlayerInputComponent(PlayerInputComponent);

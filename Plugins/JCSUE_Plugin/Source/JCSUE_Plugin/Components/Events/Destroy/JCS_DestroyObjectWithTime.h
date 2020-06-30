@@ -22,7 +22,7 @@ class JCSUE_PLUGIN_API UJCS_DestroyObjectWithTime : public UActorComponent
 {
 public:
     UPROPERTY(EditAnywhere,
-        Category = "Runtime Variables",
+        Category = JCS_RUNTIME_VARS,
         meta = (ToolTip = "Time to live before destory."))
     float timeToDestroy = 5.0f;
 
