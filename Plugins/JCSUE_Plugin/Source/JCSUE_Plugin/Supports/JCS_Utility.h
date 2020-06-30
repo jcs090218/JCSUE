@@ -9,18 +9,19 @@
 
 #pragma once
 
-/**
- * @class JCS_Utility
- * @brief Util function place here.
- */
-class JCSUE_PLUGIN_API JCS_Utility
+#include "Components/ActorComponent.h"
+
+namespace JCS_Utility
 {
-public:
-    JCS_Utility();
-    virtual ~JCS_Utility();
-
-    /* setter */
-
-    /* getter */
-
-};
+    /**
+     * @func GetComponent
+     * @desc Get a component from ACTOR.
+     * @return Target component pointer that you want to get.
+     */
+    template <class T>
+    T* GetComponent(const AActor* actor)
+    {
+        auto ac = actor->GetComponentByClass(T::StaticClass());
+        return Cast<T>(ac);
+    }
+}

@@ -10,12 +10,4 @@
 #include "./JCS_Utility.h"
 #include "../JCSUE_Plugin.h"
 
-JCS_Utility::JCS_Utility()
-{
-    // empty..
-}
-
-JCS_Utility::~JCS_Utility()
-{
-    // empty..
-}
+// empty..
