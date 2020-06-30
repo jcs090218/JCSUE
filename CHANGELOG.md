@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
 
+### 2020-07-01
+
+* Started the utility module.
+
 ### 2020-06-29
 
 * Added widget test.

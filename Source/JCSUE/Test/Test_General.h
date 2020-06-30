@@ -29,11 +29,11 @@ public:
     UPROPERTY(EditAnywhere, meta = (MetaClass = "JCS_OrderEvent"))
     FStringClassReference myClass;
 
-    UPROPERTY(EditAnywhere)
-        AActor* orderEvent;
+    UPROPERTY(EditAnywhere) 
+    AActor* orderEvent;
 
     UPROPERTY(EditAnywhere, meta=(UseComponentPicker, AllowedClasses="JCS_OrderEvent"))
-        FComponentReference comps;
+    FComponentReference comps;
 
 private:
     UPROPERTY(VisibleAnywhere)

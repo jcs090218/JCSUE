@@ -24,23 +24,13 @@ void UTest_General::BeginPlay()
         this->m_pTestWidget = nullptr;
     }
 
-    if (UClass* testWidget = LoadClass<UUserWidget>(NULL, TEXT("/Game/JCSUE/GUI/_Test._Test_C")))
-    {
-        if (APlayerController* p_PC = GetWorld()->GetFirstPlayerController())
-        {
-            this->m_pTestWidget = CreateWidget<UUserWidget>(p_PC, testWidget);
-            if (this->m_pTestWidget)
-            {
-                this->m_pTestWidget->AddToViewport();
-            }
-        }
-    }
+    JCS_Utility::AddToViewport(this, TEXT("/Game/JCSUE/GUI/_Test._Test_C"));
 
     //JCS_Debug::Log(L"Hello %d - %d - %d - %d", -1, 10, 33, 99);
     //JCS_Debug::Log(L"Hello %s - %s", L"Something els", L"OP");
     //JCS_Debug::Log(L"Hello %f", 12.321f);
 
-    m_pInputComponent = GetOwner()->FindComponentByClass<UInputComponent>();
+    m_pInputComponent = JCS_Utility::FindComponentByClass<UInputComponent>(GetOwner());
 
     if (!m_pInputComponent)
     {
@@ -54,9 +44,7 @@ void UTest_General::TickComponent(float DeltaTime, ELevelTick TickType, FActorCo
 
     if (JCS_Input::GetKeyDown(EKeys::K))
     {
-        auto component = comps.GetComponent(GetOwner());
-
-        UJCS_OrderEvent* oe = Cast<UJCS_OrderEvent>(component);
+        UJCS_OrderEvent* oe = JCS_Utility::GetComponent<UJCS_OrderEvent>(GetOwner(), comps);
 
         oe->StartEvent(0.5f, []() 
         {
