@@ -14,15 +14,15 @@ of scripts/components could generate enormous variety of different behaviour.
 
 * N/A
 
-## :pushpin: Installation
+## ::floppy_disk: Installation
 
-### 1. Download JCSUE_Plugin
+#### 1. Download JCSUE_Plugin
 
 You need to download the plugin from relese tag like the latest relese 
 [here](https://github.com/jcs090218/JCSUE/releases). You can unzip the plugin
 and just drop it into your project's plugins folder, e.g. `YourProject/Plugins/`.
 
-### 2. Edit Build.cs
+#### 2. Edit Build.cs
 
 Edit your project's `YourProject.Build.cs` file located at `Source/YourProject/YourProject.Build.cs`
 by adding `"JCSUE_Plugin"` to your `PublicDependencyModuleNames` array. Like, 
@@ -31,7 +31,7 @@ by adding `"JCSUE_Plugin"` to your `PublicDependencyModuleNames` array. Like,
 PublicDependencyModuleNames.AddRange(new string[] { ..., "JCSUE_Plugin" });
 ```
 
-### Compile
+#### 3. Compile
 
 Then you should able to compile your project without any hassle!
 
