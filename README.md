@@ -14,7 +14,7 @@ of scripts/components could generate enormous variety of different behaviour.
 
 * N/A
 
-## ::floppy_disk: Installation
+## :floppy_disk: Installation
 
 #### 1. Download JCSUE_Plugin
 
