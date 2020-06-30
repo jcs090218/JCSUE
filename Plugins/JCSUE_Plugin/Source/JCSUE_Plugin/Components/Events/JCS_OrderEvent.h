@@ -22,7 +22,7 @@ public:
     TFunction<void()> execution;
 
     UPROPERTY(EditAnywhere,
-        Category = JCS_RUNTIME_VARS,
+        Category = Runtime_Variables,
         meta = (ToolTip = "Time for each execution."))
     float intervalTime = 0.0f;
 

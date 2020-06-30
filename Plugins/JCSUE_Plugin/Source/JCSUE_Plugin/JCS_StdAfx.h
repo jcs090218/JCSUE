@@ -64,8 +64,3 @@
  * @brief Maxinum of the buffer per log.
  */
 #define JCS_MAX_BUFFER_LOG 128
-
-#define JCS_HELPER_VARS  "Helper Variables"      /* Only for checking, do not adjust the value of the variables. */
-#define JCS_CHECK_VARS   "Check Variables"       /* Only being use in game initialize time */
-#define JCS_INIT_VARS    "Initialize Variables"  /* Work on both initialize time and runtime. */
-#define JCS_RUNTIME_VARS "Runtime Variables"     /* Only happens in developer mode. */
