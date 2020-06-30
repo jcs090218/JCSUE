@@ -48,7 +48,7 @@ void UTest_General::BeginPlay()
     }
 }
 
-void UTest_General::TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction )
+void UTest_General::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
-    Super::TickComponent( DeltaTime, TickType, ThisTickFunction );
+    Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 }

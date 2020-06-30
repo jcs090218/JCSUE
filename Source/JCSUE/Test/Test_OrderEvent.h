@@ -23,17 +23,17 @@ class JCSUE_API UTest_OrderEvent : public UActorComponent
 {
 public:
     UPROPERTY(EditAnywhere,
-        Category = JCS_RUNTIME_VARS,
+        Category = Runtime_Variables,
         meta = (ToolTip = "Text to print for testing."))
     FString word = "Hello World!!~~";
 
     UPROPERTY(EditAnywhere,
-        Category = JCS_RUNTIME_VARS,
+        Category = Runtime_Variables,
         meta = (ToolTip = "Count to print the text."))
     int printCount = 5;
 
     UPROPERTY(EditAnywhere,
-        Category = JCS_RUNTIME_VARS,
+        Category = Runtime_Variables,
         meta = (ToolTip = "Interval time for each print."))
     float intervalTime = 1.0f;
 

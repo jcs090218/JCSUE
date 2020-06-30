@@ -23,13 +23,23 @@ public:
     UTest_General();
 
     virtual void BeginPlay() override;
-    virtual void TickComponent( float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction ) override;
+    virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+
+public:
+    UPROPERTY(EditAnywhere, meta = (MetaClass = "JCS_OrderEvent"))
+    FStringClassReference myClass;
+
+    UPROPERTY(EditAnywhere)
+        AActor* orderEvent;
+
+    UPROPERTY(EditAnywhere)
+        USceneComponent* comps;
 
 private:
     UPROPERTY(VisibleAnywhere)
     float m_someValue;
 
-    UPROPERTY(EditAnywhere, Category = Enum)
+    UPROPERTY(EditAnywhere, Category = Runtime_Variablees)
     TEnumAsByte<JCS_Axis> m_axis = JCS_Axis::k_x;
 
     UInputComponent* m_pInputComponent = nullptr;
