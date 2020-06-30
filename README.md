@@ -12,6 +12,8 @@ of scripts/components could generate enormous variety of different behaviour.
 
 ## :newspaper: News
 
+Here is the list of few important and recent changes to this plugin.
+
 * `0.0.1` - First test release version for testing purpose.
 
 ## :floppy_disk: Installation
