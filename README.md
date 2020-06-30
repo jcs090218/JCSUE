@@ -12,7 +12,7 @@ of scripts/components could generate enormous variety of different behaviour.
 
 ## :newspaper: News
 
-* N/A
+* `0.0.1` - First test release version for testing purpose.
 
 ## :floppy_disk: Installation
 
