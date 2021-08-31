@@ -1,0 +1,32 @@
+# Manual
+manual_name: '[Manual Name]'
+
+# Theme
+header_color: '#222C37'
+arrow_color: '#19E3B1'
+th_show: true
+th_color: '#A2F2DE'
+
+# Version
+version_title_01: '[Manual] Version: '
+version_title_02: ''
+version_title_03: ''
+version_title_04: ''
+version_title_05: ''
+version_title_06: ''
+version_title_07: ''
+
+version_num_01: '0.0.1'
+version_num_02: ''
+version_num_03: ''
+version_num_04: ''
+version_num_05: ''
+version_num_06: ''
+version_num_07: ''
+
+# Copyright
+copyright_text: 'Copyright © [yyyy] [Group Name]. Built: [yyyy-mm-dd].'
+
+# Link
+homepage_url: 'https://github.com/SiraDoc/SiraDoc'
+homepage_text: 'SiraDoc.github'
