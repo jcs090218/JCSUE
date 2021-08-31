@@ -41,7 +41,7 @@ Then you should able to compile your project without any hassle!
 
 ## :link: Links
 
-* *Manual/Scripting API* : [Scripting-Manual-JCSUE](http://www.jcs-profile.com:3003)
+* *Manual/Scripting API* : [Scripting-Manual-JCSUE](https://jcs090218.github.io/JCSUE/Manual/index.html)
 
 ## :video_game: Games
 
