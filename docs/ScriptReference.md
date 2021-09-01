@@ -1,7 +1,7 @@
 # Welcome to the <span class="manual-name"></span> Scripting Reference!
 
 This section of the documentation contains the details of the scripting API of the
-JCSUE. To use this information, you should be familiar with Unity Scripting API
+JCSUE. To use this information, you should be familiar with Unreal Scripting API
 and the concept of the basic game engine architecture.
 
 This scripting reference is layouted corresponding to JCSUE scripts
