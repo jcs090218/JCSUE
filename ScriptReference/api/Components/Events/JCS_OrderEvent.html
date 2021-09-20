@@ -1,0 +1,79 @@
+<h1 id="jcs_orderevent">JCS_OrderEvent</h1><p>Execute an operation in order with interval of time.<h2 id="variables">Variables</h2><table><thead><tr><th id="name" style="text-align:left">Name<th id="description" style="text-align:left">Description<tbody><tr><td style="text-align:left">intervalTime<td style="text-align:left">Time for each execution."</table><h2 id="functions">Functions</h2><table><thead><tr><th id="name" style="text-align:left">Name<th id="description" style="text-align:left">Description<tbody><tr><td style="text-align:left">StartEvent<td style="text-align:left">Start a new event with interval of time and execution orders.<tr><td style="text-align:left">DoneEvent<td style="text-align:left">Terminate the current event loop.</table><h2 id="example">Example</h2><p>Test_OrderEvent.h<pre class="c++ language-c++"><code class="hljs c++ language-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">pragma</span> once</span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&quot;../JCSUE.h&quot;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&quot;Components/ActorComponent.h&quot;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&quot;Test_OrderEvent.generated.h&quot;</span></span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">UJCS_OrderEvent</span>;</span>
+
+<span class="hljs-comment">/**
+ * @class UTest_OrderEvent
+ * @brief Test component `JCS_OrderEvent` component.
+ */</span>
+<span class="hljs-built_in">UCLASS</span>(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">JCSUE_API</span> <span class="hljs-title">UTest_OrderEvent</span> :</span> <span class="hljs-keyword">public</span> UActorComponent
+{
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">UPROPERTY</span>(EditAnywhere,
+        Category = <span class="hljs-string">&quot;Runtime Variables&quot;</span>,
+        meta = (ToolTip = <span class="hljs-string">&quot;Text to print for testing.&quot;</span>))
+    FString word = <span class="hljs-string">&quot;Hello World!!~~&quot;</span>;
+
+    <span class="hljs-built_in">UPROPERTY</span>(EditAnywhere,
+        Category = <span class="hljs-string">&quot;Runtime Variables&quot;</span>,
+        meta = (ToolTip = <span class="hljs-string">&quot;Count to print the text.&quot;</span>))
+    <span class="hljs-keyword">int</span> printCount = <span class="hljs-number">5</span>;
+
+    <span class="hljs-built_in">UPROPERTY</span>(EditAnywhere,
+        Category = <span class="hljs-string">&quot;Runtime Variables&quot;</span>,
+        meta = (ToolTip = <span class="hljs-string">&quot;Interval time for each print.&quot;</span>))
+    <span class="hljs-keyword">float</span> intervalTime = <span class="hljs-number">1.0f</span>;
+
+<span class="hljs-keyword">private</span>:
+    <span class="hljs-built_in">GENERATED_BODY</span>()
+
+    <span class="hljs-keyword">int</span> m_counter = <span class="hljs-number">0</span>;
+
+    UJCS_OrderEvent* m_pOrderEvent = <span class="hljs-literal">nullptr</span>;
+
+<span class="hljs-keyword">public</span>:
+    <span class="hljs-built_in">UTest_OrderEvent</span>();
+
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> <span class="hljs-keyword">void</span> <span class="hljs-title">BeginPlay</span><span class="hljs-params">()</span> <span class="hljs-keyword">override</span></span>;
+
+    <span class="hljs-comment">/* operator */</span>
+
+    <span class="hljs-comment">/* setter */</span>
+
+    <span class="hljs-comment">/* getter */</span>
+
+<span class="hljs-keyword">private</span>:
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DoExecution</span><span class="hljs-params">()</span></span>;
+};</code></pre><p>Test_OrderEvent.cpp<pre class="c++ language-c++"><code class="hljs c++ language-c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&quot;Test_OrderEvent.h&quot;</span></span>
+
+UTest_OrderEvent::<span class="hljs-built_in">UTest_OrderEvent</span>()
+{
+    PrimaryComponentTick.bCanEverTick = <span class="hljs-literal">true</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">UTest_OrderEvent::BeginPlay</span><span class="hljs-params">()</span>
+</span>{
+    Super::<span class="hljs-built_in">BeginPlay</span>();
+
+    m_pOrderEvent = Cast&lt;UJCS_OrderEvent&gt;(<span class="hljs-built_in">GetOwner</span>()-&gt;<span class="hljs-built_in">GetComponentByClass</span>(UJCS_OrderEvent::<span class="hljs-built_in">StaticClass</span>()));
+
+    m_pOrderEvent-&gt;<span class="hljs-built_in">StartEvent</span>(<span class="hljs-keyword">this</span>-&gt;intervalTime, [<span class="hljs-keyword">this</span>]()
+    {
+        <span class="hljs-keyword">this</span>-&gt;<span class="hljs-built_in">DoExecution</span>();
+    });
+}
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">UTest_OrderEvent::DoExecution</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">UE_LOG</span>(LogTemp, Warning, <span class="hljs-built_in">TEXT</span>(<span class="hljs-string">&quot;%s&quot;</span>), *word);
+
+    ++<span class="hljs-keyword">this</span>-&gt;m_counter;
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>-&gt;m_counter == printCount)
+        m_pOrderEvent-&gt;<span class="hljs-built_in">DoneEvent</span>();
+}</code></pre><p>`
