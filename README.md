@@ -1,6 +1,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Unreal](https://img.shields.io/badge/Unreal%20Engine-4.25.1-blue.svg?logo=unrealengine&color=black)](https://www.unrealengine.com/en-US/)
-[![Release Tag](https://img.shields.io/github/tag/jcs090218/JCSUE.svg?label=release)](https://github.com/jcs090218/JCSUE/releases/latest)
+[![Release](https://img.shields.io/github/tag/jcs090218/JCSUE.svg?label=release&logo=github)](https://github.com/jcs090218/JCSUE/releases/latest)
 
 # JCSUE
 
