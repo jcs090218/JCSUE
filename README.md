@@ -11,13 +11,13 @@ trouble making script/component over and over agian in variety of different
 project. This library provide many scripted game mechanics. With those combination
 of scripts/components could generate enormous variety of different behaviour.
 
-## :newspaper: News
+## 📰 News
 
 Here is the list of few important and recent changes to this plugin.
 
 * `0.0.1` - First test release version for testing purpose.
 
-## :floppy_disk: Installation
+## 💾 Installation
 
 #### 1. Download JCSUE_Plugin
 
@@ -38,16 +38,10 @@ PublicDependencyModuleNames.AddRange(new string[] { ..., "JCSUE_Plugin" });
 
 Then you should able to compile your project without any hassle!
 
-## :link: Links
+## 🔗 Links
 
 * *Manual/Scripting API* : [Scripting-Manual-JCSUE](https://jcs090218.github.io/JCSUE/Manual/index.html)
 
-## :video_game: Games
+## 🎮 Games
 
 * N/A
-
-## ⚜️ License
-
-`JCSUE` is distributed under the terms of the MIT license.
-
-See [`LICENSE`](./LICENSE) for details.
