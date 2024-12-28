@@ -2,6 +2,7 @@
 /.git
 /.vs
 /.vscode
+.vsconfig
 /Binaries
 /Build
 /DerivedDataCache
