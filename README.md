@@ -45,3 +45,9 @@ Then you should able to compile your project without any hassle!
 ## :video_game: Games
 
 * N/A
+
+## ⚜️ License
+
+`JCSUE` is distributed under the terms of the MIT license.
+
+See [`LICENSE`](./LICENSE) for details.
