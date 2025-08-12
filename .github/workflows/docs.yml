@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
     
     - name: Set up Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
@@ -30,7 +30,7 @@ jobs:
       run: siradoc docs build
 
     - name: Clone branch gh-pages
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         path: 'gh-pages'
         ref: gh-pages
